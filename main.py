@@ -250,7 +250,7 @@ mi_df = mi_df.sort_values(by='MI_with_latency', ascending=False)
 
 plt.figure(figsize=(10, 6))
 sns.barplot(x=mi_df['MI_with_latency'], y=mi_df.index, palette='viridis')
-plt.title('Mutual Information between Features and Latency (Manual Calculation)')
+plt.title('Mutual Information between Features and Latency')
 plt.xlabel('Mutual Information Score')
 plt.ylabel('Feature')
 plt.tight_layout()
